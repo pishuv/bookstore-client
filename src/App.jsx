@@ -19,13 +19,13 @@ import AuthContextProvider from './context/Auth.context.jsx';
 
 const App =() => {
   return (
-    <HashRouter baseline="/">
+    <HashRouter>
       <AuthContextProvider>
         <CartContextProvider>
             <Header />
 
               <Routes>
-                  <Route path='' element={<LandingPage />} />
+                  <Route exact path='/' element={<LandingPage />} />
 
                   <Route path='books' element={<Homepage />} />
 
