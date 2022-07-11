@@ -25,7 +25,7 @@ const App =() => {
             <Header />
 
               <Routes>
-                  <Route exact path='/' element={<LandingPage />} />
+                  <Route path='/' element={<LandingPage />} />
 
                   <Route path='books' element={<Homepage />} />
 
