@@ -1,0 +1,11 @@
+.main-footer {
+    padding: 30px;
+    background: #1a1b2e;
+    text-align: center;
+
+    /* margin-top: 268px; */
+}
+
+.main-footer span {
+    color: #fff;
+}
