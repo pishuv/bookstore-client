@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      REACT_APP_BOOKSTORE_APP_API_URL: https://bushnik-bookstore.herokuapp.com
     strategy:
       matrix:
         node-version: [16.x]
@@ -38,4 +40,3 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
-        REACT_APP_BOOKSTORE_APP_API_URL: https://bushnik-bookstore.herokuapp.com
