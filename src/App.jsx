@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import {HashRouter , Routes , Route} from 'react-router-dom';
 
 import Header from './components/shared/header/Header.component';
 import Footer from './components/shared/footer/Footer.component';
@@ -19,13 +19,13 @@ import AuthContextProvider from './context/Auth.context.jsx';
 
 const App =() => {
   return (
-    <Router>
+    <HashRouter basename='/'>
       <AuthContextProvider>
         <CartContextProvider>
             <Header />
 
               <Routes>
-                  <Route path='/' element={<LandingPage />} />
+                  <Route path='' element={<LandingPage />} />
 
                   <Route path='books' element={<Homepage />} />
 
@@ -43,7 +43,7 @@ const App =() => {
             <Footer />
           </CartContextProvider>
         </AuthContextProvider>
-    </Router>
+    </HashRouter>
           
   );
 }
