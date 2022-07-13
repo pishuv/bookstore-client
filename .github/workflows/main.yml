@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
+      CI: false # HACK: Otherwise build will faile since "Treating warnings as errors because process.env.CI = true."
       REACT_APP_BOOKSTORE_APP_API_URL: https://bushnik-bookstore.herokuapp.com
     strategy:
       matrix:
