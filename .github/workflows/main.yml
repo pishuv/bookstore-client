@@ -12,7 +12,7 @@ jobs:
       REACT_APP_BOOKSTORE_APP_API_URL: https://bushnik-bookstore.herokuapp.com
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v2
