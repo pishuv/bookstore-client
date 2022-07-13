@@ -16,8 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: where am i
-      run: pwd
+    - name: debug
+      run: env
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
